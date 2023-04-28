@@ -9,4 +9,4 @@ However, with iOS/iPadOS/tvOS/audioOS 16, watchOS 9 and macOS 13, Apple decided 
 This also made me challenging and even those who are archiving such files. Since Apple is currently in the transition phase, I decided to create a list of Apple MobileAssets and to indicate which asset is used for what and if it moved to Pallas or not.
 If there is a MobileAsset that moved to pallas, I have also attached a curl command to send a request to the Apple server.
 
-The list is incomplete for now. If I have time, I will expand this gist with more MobileAssets.
+The list is incomplete for now. If I have time, I will expand this repo with more MobileAssets.
