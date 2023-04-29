@@ -215,5 +215,77 @@ mesu.apple.com link: `https://mesu.apple.com/assets/com_apple_MobileAsset_MXLong
 Usage: List of media apps for the TV app. <br>
 Availability: mesu only <br>
 mesu.apple.com link: `https://mesu.apple.com/assets/com_apple_MobileAsset_MXLongFormVideoAppsV2/com_apple_MobileAsset_MXLongFormVideoAppsV2.xml` <br>
+#### com.apple.MobileAsset.network.networknomicon
+Usage: Network testing. <br>
+Availability: mesu only <br>
+mesu.apple.com link: `https://mesu.apple.com/assets/com_apple_MobileAsset_network_networknomicon/com_apple_MobileAsset_network_networknomicon.xml` <br>
+#### com.apple.MobileAsset.OTARescueAsset
+Usage: A dummy updater file because their device run an older version of iOS. <br>
+Note: this MobileAsset is not in a specific list, but it is listed in the software update MobileAsset. <br>
+An example file: `https://secure-appldnld.apple.com/ios9/031-21276-20150906-9C5374F6-0D6F-4CEC-A322-668F61700CC9/com_apple_MobileAsset_OTARescueAsset/f393ae5156319e127a2b21d2f85b66a151c44ff5.zip` <br>
+#### com.apple.MobileAsset.PersonalizationPortraitAsset
+Usage: Portrait mode testing? <br>
+Availability: mesu only <br>
+mesu.apple.com link: `https://mesu.apple.com/assets/com_apple_MobileAsset_PersonalizationPortraitAsset/com_apple_MobileAsset_PersonalizationPortraitAsset.xml` <br>
+#### com.apple.MobileAsset.SpeechTranslationAssets
+Variants:
+#### com.apple.MobileAsset.SpeechTranslationAssets
+#### com.apple.MobileAsset.SpeechTranslationAssets2
+#### com.apple.MobileAsset.SpeechTranslationAssets3
+#### com.apple.MobileAsset.SpeechTranslationAssets4
+#### com.apple.MobileAsset.SpeechTranslationAssets5
+Usage: Assets for the Translate app. <br>
+Availability: hybrid (both mesu and pallas, version 5 is only pallas, 4 and lower is only mesu) <br>
+WARNING: the response will be large! <br>
+mesu.apple.com link for SppechTranslation4: `https://mesu.apple.com/assets/com_apple_MobileAsset_SpeechTranslationAssets4/com_apple_MobileAsset_SpeechTranslationAssets4.xml` <br>
+Pallas example curl command for SpeechTranslation5:
+`curl -H 'Content-Type: application/json' -H 'Accept: application/json' https://gdmf.apple.com/v2/assets --data '{"AssetAudience":"0c88076f-c292-4dad-95e7-304db9d29d34","AssetType":"com.apple.MobileAsset.SpeechTranslationAssets5","ClientVersion":2}'` <br>
+#### com.apple.MobileAsset.SubscriptionOptimizerTimingModels
+Usage: Notification delay models. <br>
+Availability: Pallas only <br>
+Pallas example curl command:
+`curl -H 'Content-Type: application/json' -H 'Accept: application/json' https://gdmf.apple.com/v2/assets --data '{"AssetAudience":"0c88076f-c292-4dad-95e7-304db9d29d34","AssetType":"com.apple.MobileAsset.SubscriptionOptimizerTimingModels","ClientVersion":2}'` <br>
+#### com.apple.MobileAsset.SystemApp
+Usage: To redownload built in system apps (fill it with the BuildID and SystemImageID found in the iOS filesystem in System/Library/CoreServices/SystemVersion.plist). <br>
+Availability: mesu only <br>
+mesu.apple.com link: `https://mesu.apple.com/systemassets/BuildID/SystemImageID/com_apple_MobileAsset_SystemApp/com_apple_MobileAsset_SystemApp.xml` <br>
+#### com.apple.MobileAsset.TempMorphunData
+Usage: Siri related assets. <br>
+Availability: mesu only <br>
+mesu.apple.com link: `https://mesu.apple.com/assets/com_apple_MobileAsset_TempMorphunData/com_apple_MobileAsset_TempMorphunData.xml` <br>
+#### com.apple.MobileAsset.TextInput.Dictionary
+Usage: Dictionary related assets. <br>
+Availability: mesu only <br>
+mesu.apple.com link: `https://mesu.apple.com/assets/com_apple_MobileAsset_TextInput_Dictionary/com_apple_MobileAsset_TextInput_Dictionary.xml` <br>
+#### com.apple.MobileAsset.TopLevelDomainDafsa
+Usage: Unknown. <br>
+Availability: mesu only <br>
+mesu.apple.com link: `https://mesu.apple.com/assets/com_apple_MobileAsset_TopLevelDomainDafsa/com_apple_MobileAsset_TopLevelDomainDafsa.xml` <br>
+#### com.apple.MobileAsset.TopLevelDomainDafsa
+Usage: Unknown. <br>
+Availability: mesu only <br>
+mesu.apple.com link: `https://mesu.apple.com/assets/com_apple_MobileAsset_TopLevelDomainDafsa/com_apple_MobileAsset_TopLevelDomainDafsa.xml` <br>
+#### com.apple.MobileAsset.Trial.Siri
+Variants:
+#### com.apple.MobileAsset.Trial.Siri.SiriDialogAssets
+#### com.apple.MobileAsset.Trial.Siri.SiriExperienceCam
+#### com.apple.MobileAsset.Trial.Siri.SiriFindMyConfigurationFiles
+#### com.apple.MobileAsset.Trial.Siri.SiriTextToSpeech
+#### com.apple.MobileAsset.Trial.Siri.SiriUnderstandingAsrAssistant
+#### com.apple.MobileAsset.Trial.Siri.SiriUnderstandingAsrHammer
+#### com.apple.MobileAsset.Trial.Siri.SiriUnderstandingAttentionAssets
+#### com.apple.MobileAsset.Trial.Siri.SiriUnderstandingMorphun
+#### com.apple.MobileAsset.Trial.Siri.SiriUnderstandingNL
+#### com.apple.MobileAsset.Trial.Siri.SiriUnderstandingNLOverrides
+Usage: Siri assets. <br>
+Availability: pallas only <br>
+WARNING: the responses will be INSANELY large and files are encrypted! <br>
+mesu.apple.com link for Font7: `https://mesu.apple.com/assets/com_apple_MobileAsset_Font7/com_apple_MobileAsset_Font7.xml` <br>
+Pallas example curl command for SiriDialogAssets:
+`curl -H 'Content-Type: application/json' -H 'Accept: application/json' https://gdmf.apple.com/v2/assets --data '{"AssetAudience":"0c88076f-c292-4dad-95e7-304db9d29d34","AssetType":"com.apple.MobileAsset.com.apple.MobileAsset.Trial.Siri.SiriDialogAssets","ClientVersion":2}'` <br>
+#### com.apple.MobileAsset.TTSAXResourceModelAssets
+Usage: TTS assets. <br>
+Availability: mesu only <br>
+mesu.apple.com link: `https://mesu.apple.com/assets/com_apple_MobileAsset_TTSAXResourceModelAssets/com_apple_MobileAsset_TTSAXResourceModelAssets.xml` <br>
 
 To be continued...
